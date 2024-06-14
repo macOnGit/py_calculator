@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "python"
+        label "python3"
     }
     triggers {
         pollSCM('H/5 * * * *')
