@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "python3"
+        label "python"
     }
     triggers {
         pollSCM('H/5 * * * *')
@@ -8,7 +8,7 @@ pipeline {
     stages{
         stage("Unit test"){
             steps{
-                sh 'python test_calculator.py'
+                sh 'python3 test_calculator.py'
             }
         }
     }
